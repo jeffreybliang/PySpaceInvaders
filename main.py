@@ -194,6 +194,11 @@ class PySpaceInvaders:
             if alien.rect.colliderect(self.spaceship.rect):
                 self.spaceship.destroy()
 
+            # Check to see if alien has reached border (world)
+            # If so, game_over
+            if alien.rect.bottom >= WORLD_DIM[1]:
+                self._game_over()
+
     def _collide_spaceship_and_lasers(self):
 
         # If spaceship already destroyed, we return

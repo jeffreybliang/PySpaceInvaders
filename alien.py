@@ -67,6 +67,7 @@ class Saucer:
         self.saucer_sound.stop()
         self.saucer_destruction_sound.stop()
 
+
 class Laser:
 
     def __init__(self, top_left_pos, type_index: int):
@@ -82,7 +83,6 @@ class Laser:
         self.is_exploded = False
         self.time_since_explosion = 0
         self.explosion_sprite = pygame.image.load(SPRITE_PATH + LASER_EXPLOSION_SPRITE_NAME)
-
 
     def update(self, dt):
         if self.is_exploded:
@@ -304,7 +304,8 @@ class Aliens:
                 if alien.rect.bottom > max_alien_y:
                     max_alien = alien
                     max_alien_y = alien.rect.bottom
-            if max_alien: lowest_aliens.append(max_alien)
+            if max_alien:
+                lowest_aliens.append(max_alien)
 
         return lowest_aliens
 
@@ -338,6 +339,7 @@ class Aliens:
         movement = self._get_alien_movement(dt)
         for alien in self:
             alien.update(dt, movement)
+
 
     def _get_alien_movement(self, dt):
         # get the x sign of the movement direction

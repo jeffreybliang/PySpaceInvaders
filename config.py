@@ -68,13 +68,13 @@ MISSILE_SPEED_PIXEL_PER_SECOND = 500
 ### ALIENS ###
 ALIEN_FORMATION = [
     [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
-    [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    # [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+    # [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+    # [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    # [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ]
 ALIEN_FORMATION_WIDTH_PIXELS = 344
-ALIEN_SPEED_PIXEL_PER_SECOND = 10
+ALIEN_SPEED_PIXEL_PER_SECOND = 30
 ALIEN_FIRING_PERIOD_MS = 1000
 ALIEN_SPRITE_SHIFT_PERIOD_MS = 500
 ALIEN_STARTING_POS_Y = WORLD_DIM[1] * 3 // 10
